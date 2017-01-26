@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+		p {
+			text-align:left;
+		}
+
+		li ul {
+			text-align:left;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Let's Viz All the Data!*</h1>
+					<br><br><br><br>
+					<p style="font-size:30px">*actually, please don't</p>
+					<p style="font-size:30px">*only the good data, please</p>
+					<p style="font-size:30px">*and viz it responsibly, please</p>
+					<br><br>
+					<p style="text-align:right; font-size:24px">Kate Rabinowitz</p>	
+				</section>
+
+				<section>
+					<section>
+					<h2>Data Across the World</h2>
+					<a href="http://bit.ly/2khbYYK" target="_blank">
+					<img src="./img/gapminder.png" alt="gapminder">
+					</a>
+					<p>Source: Gapminder</p>
+					</section>
+
+					<section>
+					<h3>Your Primary Sources</h3>
+					<p>Global institutions will be best your source for country-level data outside the US. These are mostly names that you're familiar with:</p>
+					<ul style="list-style-type:none">
+						<li><a href="https://www.imf.org/en/Data" target="_blank">IMF</a></li>
+						<li><a href="http://datacatalog.worldbank.org/" target="_blank">The World Bank</a></li>
+						<li><a href="https://data.oecd.org/" target="_blank">OECD</a></li>
+						<li><a href="http://data.un.org/Explorer.aspx" target="_blank">UN</a></li>
+						<li><a href="http://www.who.int/gho/en/" target="_blank">WHO</a></li>
+						<li><a href="https://www.wto.org/english/res_e/statis_e/statis_e.htm">WTO</a></li>
+					</ul>
+					</section>
+
+					<section>
+					<h3>Always the Read Small Print</h3>
+					<p>The most commonly used figures (or maybe those with the most business value), like unemployment, are more likely to be harmonised, i.e. made comparable across countries despite differing methodologies. 
+					<br><br>
+					Some of the most comprehensive datasets, for instance the World Bank World Development Indicators dataset, pull data from a variety of sources of varying quality. Know where your data comes from.</p>
+					</section>
+
+					<section>
+					<h3>Always Read the Small Print</h3>
+					<p>A level higher than data points, indices are common for measuring concepts, like corruption or freedom of press. Know what they measure and read the criticism.
+					<br><br>
+					The less developed the country or the more authoritarian the government, the less reliable any data will be.</p>
+					</section>
+
+					<section>
+					<h3>Data Intregrity and Suspension Typically Only Issues For Developing Nations</h3>
+					<img src="./img/altfacts.png">
+					<img src="./img/climatedata.png">
+					<!-- <img src="./img/kansas.png"> -->
+					<img src="./img/epa.png">
+					<img src="./img/odsurvive.png">
+					<p><a href="https://sunlightfoundation.com/list-of-federal-government-agencies-told-not-to-communicate-with-the-public/" target="_blank">A running list of federal agencies directed not to communicate with the public</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h2>American Data</h2>
+					<a href="https://www.washingtonpost.com/graphics/national/maps-of-american-infrastrucure/" target="_blank">
+					<img src="./img/electricGrid.png" alt="electricGrid">
+					</a>
+					<p>Source: Tim Meko, Washington Post. <a href="http://www.storybench.org/tim-meko-visualized-americas-vast-web-pipelines-railroads-electricity/" target="_blank">How it was made.</a></p>
+					</section>
+
+					<section>
+					<h3>Data.gov! Nearly Two! Hundred! Thousands! Datasets!</h3>
+					<img src="./img/datagov.png" alt="data.gov">
+					</section>
+
+					<section>
+					<h3>Well, actually...</h3>
+					<img src="./img/datagovstats.png" alt="electricGrid" style= "float:right; margin: 0px 0px 0px 20px;">
+					<p>Data.gov is valuable and great to peruse, but the number of datasets may make you more excited than you should be.
+					<br><br>More than half of the data is from two agencies (NOAA and Fish and Wildlife Services) and the majority is geospatial.
+					<br><br>Much of the data is not a format that cannot quickly be visualized.
+					<br><br>If I know the agency owner, I typically just go to the agency's website.</p>
+					</section>
+
+					<section>
+					<h3>Open Federal Government Data is Pretty Great</h3>
+					<p>It's good to be skeptical, but let's not get too crazy here...</p>
+					<img src="./img/acsLegitimate.png">
+					<p>And let's remember informed skepticim is the best skepticism</p>
+					<img src="./img/acsScience.png">
+					<p style="font-size:16px; text-align:center;">(Congressman Webster at a 2012 hearing on defunding the ACS)</p>
+					</section>
+
+					<section>
+					<h3>Generally Held Geographic Groupings</h3>
+					<img src="./img/acsH.png">
+					<p>So many levels of granularity! Some have more consistent (MSA) definitions than others (Regions). Do consider how the geographic level can impact the data.</p>
+					</section>
+
+					<section>
+					<h3>So Local! So Cool!</h3>
+					<img src="./img/bikeDC.png">
+					</section>
+
+					<section>
+					<h3>Watch Your Margins of Error</h3>
+					<img src="./img/acsBlocks.png">
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h2>Local Data</h2>
+					<img src="./img/me.png">
+					<p>Source: ME!</p>
+					</section>
+
+					<section>
+					<h3>So Many Cities! So Much Data! <br>In So Many Places! With So Little Consistency!</h3>
+					<br>
+					<p>DC open data can mostly be found at opendata.dc.gov. The site is by no means comprehensive. One time I tried documenting <a href="https://github.com/katerabinowitz/ManyHomesofDCData" target="_blank">all the places</a> to find local DC data. There are a lot. <a href="http://data.codefordc.org/" target="blank">Code for DC</a>'s data portal can help you put it all together.
+					<br><br>
+					American cities' open data portals, ranked:
+					<br> <a href="http://us-city.census.okfn.org/" target="_blank">US City Open Data Census</a></p>
+					</section>
+
+					<section>
+					<h3>This can get a little messy</h3>
+					<p>A lot of local data (taxi trips, permits, inspections, etc.) does not have a long history of being used for research and policy and lacks the infrastructure (or did so until very recently) for accurate, complete and clean open data reporting. Documentation is often sparse.
+					<br><br>
+					If you have found an anomaly, please first assume it is a result of design and research accordingly.</p> 
+					</section>
+
+					<section>
+					<h3>Data Collection Can Skew Results: A Vision Zero Example</h3>
+					<br><br>
+					<p style="text-align:left;">In July 2015 DC's Vision Zero initiative, to reach zero fatalities during transit by 2020, released an app allowing citizens to report pedestrian, bike, or driving safety problems. 
+					<br><br>The data has also been made publicly available, which is great!
+					<br><br>But we must be responsible in how we use that data.</p>
+					</section>
+
+					<section>
+					<h3>A Vision Zero Example: What's Wrong with These Charts?</h3>
+					<img src="./img/vis0hood.png" alt="Vision Zero Hoods">
+					<img src="./img/vis0st.png" alt="Vision Zero Streets">
+					<p>Source: District Ninja</p>
+					</section>
+
+					<section>
+					<h3>A Vision Zero Example: What's Wrong with These Charts?</h3>
+					<img src="./img/vis0time.png" alt="Vision Zero Time">
+					<p>Source: District Ninja</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h3>The Government Isn't the Only Place to Find Data</h3>
+					<p>Newspapers increasingly make their data available. <a href="https://github.com/fivethirtyeight/data" target="_blank">538</a> does it the best. <a href="https://github.com/washingtonpost/data-police-shootings" target="_blank">Washington Post</a> collects data on police shootings.
+					<br><br>
+					Companies have data. For some, like <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>, open data is a part of their model. For most, it's not. Getting that data is often a little more complicated, expensive, and/or shady.</p>
+					</section>
+
+					<section>
+					<h3>But where is, like, the cool data?</h3>
+					<p>For when you're on the hunt for inspiration</p>
+					<ul style="list-style-type:none">
+						<li><a href="https://tinyletter.com/data-is-plural" target="_blank">Data is Plural by Jeremy Singer-Vine</a></li>
+						<li>An archive of Jeopardy! The coordinates of Waldo for every Where's Waldo! Annotated Classical Music! All Known Satellite Launches Since 1957!</li>
+						<li><a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank">Awesome Public Datasets by Xiaming Chen</a></li>Data Portal to London's Natural History Museum! Cancer! A Million Songs!
+						<li><a href="https://twitter.com/CoolDatasets?lang=en" target="_blank">@cooldatasets</a></li>
+						<li>2,600 Ted Talks*! 11,000+ proposed Constitutional amendments since 1787! 100 cities' open data sites! 
+					</ul>
+					</section>
+
+					<section>
+					<h3>To truly love data, you must know it's flaws and help it be it's best self</h3>
+					<br><br>
+					<p>And that's why you should read and bookmark <a href="https://github.com/Quartz/bad-data-guide" target="_blank">Quartz's Bad Data Guide</a></p>
+					<br><br>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h1>How do we get this data?</h1>
+					</section>
+
+					<section>
+					<h3>CSV is your best friend</h3>
+					<br><br>
+					<p>Comma separated value files are the easiest to read into R and other programming languages.
+					It's as easy as this:</p>
+					<img src="./img/readcsv.png">
+					</section>
+
+					<section>
+					<h3>When It's Not a CSV</h3>
+						<ul style="list-style-type:none">
+						<li>It's a JSON</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;->Make it a csv: https://konklone.io/json/</li>
+
+						<li>It's a PDF</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;->Rage</li>
+						<li>&nbsp;&nbsp;&nbsp;&nbsp;->Try and make it a csv: http://tabula.technology/ or Tabulizer R package</li>
+					</ul>
+					</section>
+
+					<section>
+					<h3>APIs Connect You To Data</h3>
+					<p>For our purposes, a web API is basically a website you can query to get data in a structured format.
+					<br><br>
+					You can get all sorts of data through APIs: a twitter feed, Uber price surging, political candidate spending...
+					<br><br>
+					APIs allow for access to the latest data, and let you customize what you’re going to get.</p>
+					</section>
+
+					<section>
+					<h3>What does an API call look like?</h3>
+					<p style="color:green;">https://api.data.gov/ed/collegescorecard/v1/schools?<br>api_key=xyz&amp;school.name=Johns%20Hopkins%20University<br>&amp;fields=id,school.name,2013.student.size,2014.student.size</p>
+					<p>is made up of:</p>
+					<p class="fragment" data-fragment-index="1"><strong>The endpoint:the base url for getting the data</strong><br>https://api.data.gov/ed/collegescorecard/v1/schools</p>
+					<p class="fragment" data-fragment-index="2"><strong>"?" to start query parameters</strong>
+					<p class="fragment" data-fragment-index="3"><strong>Query parameters, separated by &amp; and often including your API key</strong><br>api_key=xyz&amp;school.name=Johns%20Hopkins%20University&amp;fields=id,school.name,2013.student.size,2014.student.size</p>
+					<p class="fragment" data-fragment-index="3"><strong>Let's try it!</strong></p>
+					</section>
+
+					<section>
+					<h3>Learn more about APIs</h3>
+					<p>
+					You can learn a lot just from documentation. Here's <a href="https://collegescorecard.ed.gov/data/documentation/" target="_blank"> documentation</a>and an<a href="https://github.com/RTICWDT/open-data-maker/blob/master/API.md" target="_blank"> API guide</a> for the College Scorecard data we just queried.
+					<br><br><a href="https://github.com/rshorey/api-sample-code/blob/master/hacks-hackers-apis.pdf" target="_blank">A Short Programmatic Guide to APIs</a><br>
+					<br><br>A whole class: Considering checking out the Hopkins class Unleashing Open Data with Python
+					</section>
+
+					<section>
+					<h3>Web Scrapping</h3>
+					<p>Web sites are written using HTML. Each web page is a structured document. Sometimes a web page holds data that can only be viewed on that web page. Web scraping lets you gather data from that web page, or more precisely the HTML.
+					<br><br>
+					Let's see...
+					</section>
+
+					<section>
+					<h3>I want to Scrape!</h3>
+					<p>To learn more I like this <a href="http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/" target="_blank">Greg Rada intro</a> and this <a href="http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html" target="_blank">walkthrough from Stanford's Text as Data course</a>.</p>
+					<br><br><p style="font-size:20px;">Both of these are Python tutorials. I know this is a R class and I love R. I do almost everything in R. Python is generally better equipped for APIs and web scrapping.</p>
+					<br><br><p>With APIs and web scrapping, always read the terms of use.</p>
+					</section>	
+
+					<section>
+					<h3>FOIA: The Data You Want to Have, And They Don't</h3>
+					<br>
+					<p>I'm being dramatic. 
+					<br><br>There is a good amount of government data made open. There is a lot of government data not that is open. There are many reasons for this. In many cases, you have the right to this data. You can FOIA for it.
+					<br><br>
+					Anyone can FOIA for data.</p>
+					</section>	
+
+					<section>
+					<h3>FOIA: A worthy challenge!</h3>
+					<p>You are freeing data into the world! What a joy!
+					<br><br>
+					Know that: your request should be as specific as possible because officals aren't always keen to fill in the blanks, delivery of data may be much longer than 15 days, you may have to pay, and the data will probably be in a terrible format.
+					<br><br>
+					You are freeing data into the world! What a joy!
+					</p>
+					</section>
+
+					<section>
+					<h3>How to FOIA</h3>
+					<p>Where you should FOIA: https://www.muckrock.com/
+					<br><br>
+					How you can learn more: https://www.rcfp.org/federal-open-government-guide/federal-freedom-information-act/how-foia-works
+					<br><br>
+					What you should FOIA: Everything. 
+					</p>
+					</section>		
+
+					<section>
+					<h3>I Want Data, I Never Want to Leave R</h3>	
+					<br><br>
+					<p>There are a number of R packages that give you direct access to data so you never have to leave! Here is a <a href="http://www.computerworld.com/article/3109890/data-analytics/these-r-packages-import-sports-weather-stock-data-and-more.html" target="_blank">ComputerWorld list</a> and <a href="https://www.r-bloggers.com/r-packages-for-data-access/" target="_blank">R Bloggers list</a>. Both are most certainly incomplete.</p>			
+				</section>
+
+				<section>
+					<h2>Now, Go Grab Some Awesome Data and Viz Beautifully and Responsibly!</h2>
+					<br><br><br>
+					<ul style="list-style-type:none">
+						<li>Kate Rabinowitz</li>
+						<li>datalensdc@gmail.com</li>
+					</ul>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+			});
+		</script>
+	</body>
+</html>
