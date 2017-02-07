@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+		p {
+			text-align:left;
+		}
+
+		li ul {
+			text-align:left;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+					<h2>Congrats You Budding Data Scientists!</h2>
+					<br><br><br>
+					<p style="font-size:30px">You've learned much data, many code, lots science.
+					<br>
+					Let's talk about data outside the classroom.</p>
+					<br><br><br>
+					<p style="text-align:right; font-size:24px">Kate Rabinowitz	
+					<br>
+					@datalensdc</p>	
+					</section>
+
+					<section>
+					<h1>Hi! I'm Kate!</h1>
+					<p>You might know me from <a href="www.datalensdc.com" target="_blank">DataLensDC</a>, <a href="https://www.meetup.com/Code-for-DC/" target="_blank">Code for DC</a>, or <a href="http://techladyhackathon.org/" target="_blank">Tech Lady Hackathon</a>.
+					<br><br>
+					I like all things data and DC, plus healthy skepticism and board games.
+					<br><br>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h1>Finding Open Data</h1>
+					</section>
+
+					<section>
+					<h3>Data.gov! Nearly Two! Hundred! Thousands! Datasets!</h3>
+					<img src="./img/datagov.png" alt="data.gov">
+					</section>
+
+					<section>
+					<h3>Well, actually...</h3>
+					<img src="./img/datagovstats.png" alt="electricGrid" style= "float:right; margin: 0px 0px 0px 20px;">
+					<p>Data.gov is valuable and great to peruse, but the number of datasets may make you more excited than you should be.
+					<br><br>More than half of the data is from two agencies (NOAA and Fish and Wildlife Services) and the majority is geospatial.
+					<br><br>Much of the data is not a format that cannot quickly be visualized.
+					<br><br>If I know the agency owner, I typically just go to the agency's website.</p>
+					</section>
+
+					<section>
+					<h3>Open Federal Government Data is Pretty Great</h3>
+					<p>It's good to be skeptical, but let's not get too crazy here...</p>
+					<img src="./img/acsLegitimate.png">
+					<p>And let's remember informed skepticim is the best skepticism</p>
+					<img src="./img/acsScience.png">
+					<p style="font-size:16px; text-align:center;">(Congressman Webster at a 2012 hearing on defunding the ACS)</p>
+					</section>
+
+					<section>
+					<h3>Generally Held Geographic Groupings</h3>
+					<img src="./img/acsH.png">
+					<p>So many levels of granularity! Some have more consistent (MSA) definitions than others (Regions). Do consider how the geographic level can impact the data.</p>
+					</section>
+
+					<section>
+					<h3>So Many Cities! So Much Data! <br>In So Many Places! With So Little Consistency!</h3>
+					<br>
+					<p>DC open data can mostly be found at opendata.dc.gov. The site is by no means comprehensive. One time I tried documenting <a href="https://github.com/katerabinowitz/ManyHomesofDCData" target="_blank">all the places</a> to find local DC data. There are a lot. <a href="http://data.codefordc.org/" target="blank">Code for DC</a>'s data portal can help you put it all together.
+					<br><br>
+					American cities' open data portals, ranked:
+					<br> <a href="http://us-city.census.okfn.org/" target="_blank">US City Open Data Census</a></p>
+					</section>
+
+					<section>
+					<h3>This can get a little messy</h3>
+					<p>A lot of local data (taxi trips, permits, inspections, etc.) does not have a long history of being used for research and policy and lacks the infrastructure (or did so until very recently) for accurate, complete and clean open data reporting. Documentation is often sparse.</p>
+					</section>
+
+					<section>
+					<h3>FOIA: The Data You Want to Have, And They Don't</h3>
+					<br>
+					<p>I'm being dramatic. 
+					<br><br>There is a good amount of government data made open. There is a lot of government data not that is open. There are many reasons for this. In many cases, you have the right to this data. You can FOIA for it.
+					<br><br>
+					Anyone can FOIA for data.</p>
+					</section>	
+
+					<section>
+					<h3>FOIA: A worthy challenge!</h3>
+					<p>You are freeing data into the world! What a joy!
+					<br><br>
+					Know that: your request should be as specific as possible because officals aren't always keen to fill in the blanks, delivery of data may be much longer than 15 days, you may have to pay, and the data will probably be in a terrible format.
+					<br><br>
+					You are freeing data into the world! What a joy!
+					</p>
+					</section>
+
+					<section>
+					<h3>How to FOIA</h3>
+					<p>Where you should FOIA: <a href="https://www.muckrock.com/" target="_blank">Muckrock</a>
+					<br><br>
+					Where to learn more on how FOIA works: <a href="https://www.rcfp.org/federal-open-government-guide/federal-freedom-information-act/how-foia-works" target="_blank">Reporters Committee for Freedom of the Press</a>
+					<br><br>
+					How to FOIA DC data: <a href="https://github.com/katerabinowitz/FOIA-Requests" target="_blank">Check out my guide</a> 
+					<br><br>
+					What you should FOIA: Everything. 
+					</p>
+					</section>		
+
+					<section>
+					<h3>The Government Isn't the Only Place to Find Data</h3>
+					<p>Newspapers increasingly make their data available. <a href="https://github.com/fivethirtyeight/data" target="_blank">538</a> does it the best. <a href="https://github.com/washingtonpost/data-police-shootings" target="_blank">Washington Post</a> collects data on police shootings.
+					<br><br>
+					Companies have data. For some, like <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>, open data is a part of their model. For most, it's not. Getting that data is often a little more complicated, expensive, and/or shady.</p>
+					</section>
+
+					<section>
+					<h3>But where is, like, the cool data?</h3>
+					<p>For when you're on the hunt for inspiration</p>
+					<ul style="list-style-type:none">
+						<li><a href="https://tinyletter.com/data-is-plural" target="_blank">Data is Plural by Jeremy Singer-Vine</a></li>
+						<li>An archive of Jeopardy! The coordinates of Waldo for every Where's Waldo! Annotated Classical Music! All Known Satellite Launches Since 1957!</li>
+						<li><a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank">Awesome Public Datasets by Xiaming Chen</a></li>Data Portal to London's Natural History Museum! Cancer! A Million Songs!
+						<li><a href="https://twitter.com/CoolDatasets?lang=en" target="_blank">@cooldatasets</a></li>
+						<li>2,600 Ted Talks*! 11,000+ proposed Constitutional amendments since 1787! 100 cities' open data sites! 
+					</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h1>Trusting Data*</h1>
+					<br><br><br>
+					<p>*Never</p>
+					</section>
+
+					<section>
+					<h3>In many cases, data is an abstraction of reality. 
+					<br><br>
+					Just how abstract is important. 
+					<br><br>
+					Your analysis, modeling, and visualizations will only ever be as good as the underlying data.</h3>
+					</section>
+
+					<section>
+					<h3>So Local! So Cool!</h3>
+					<img src="./img/bikeDC.png">
+					</section>
+
+					<section>
+					<h3>Watch Your Margins of Error</h3>
+					<img src="./img/acsBlocks.png">
+					</section>
+
+					<section>
+					<h3>If you see an anomaly
+					<br><br>
+					(especially in city-level data)
+					<br><br>
+					first assume it's a result of design,
+					<br><br>
+					and research accordingly.</h3>
+					</section>
+
+					<section>
+					<h3>An Anomaly: Was 1900 a Boom Year for DC Home Construction?</h3>
+					<img src="./img/homeSpike.png">
+					<p>No. When the year a historical home was built is not known, it's coded as 1900.</p> 
+					</section>
+
+					<section>
+					<h3>An Anomaly: Almost No Maryland Inspection-Related Parking Tickets? Vast DMV Conspiracy?</h3>
+					<img src="./img/inspectT.png">
+					<p>No. This is a result of differences in state laws.</p> 
+					</section>
+
+					<section>
+					<h3>How data is collected can be even more telling than the data itself.</h3>
+					</section>
+
+					<section>
+					<h3>A Vision Zero Example</h3>
+					<br><br>
+					<p style="text-align:left;">In July 2015 DC's Vision Zero initiative, to reach zero transit-related fatalities by 2020, released an app allowing citizens to report pedestrian, bike, or driving safety problems. 
+					<br><br>The data has also been made publicly available, which is great!
+					<br><br>But we must be responsible in how we use that data.</p>
+					</section>
+
+					<section>
+					<h3>A Vision Zero Example: What's Wrong with These Charts?</h3>
+					<img src="./img/vis0hood.png" alt="Vision Zero Hoods">
+					<img src="./img/vis0st.png" alt="Vision Zero Streets">
+					<p>Source: District Ninja, <a href="http://district.ninja/the-vision-zero-initiative-part-1-district-of-pedestrians/" target="_blank">District of Pedestrians</a></p>
+					</section>
+
+					<section>
+					<h3>A Vision Zero Example: What's Wrong with These Charts?</h3>
+					<img src="./img/vis0time.png" alt="Vision Zero Time">
+					<p>Source: District Ninja, <a href="http://district.ninja/the-vision-zero-initiative-part-1-district-of-pedestrians/" target="_blank">District of Pedestrians</a></p>
+					</section>
+
+					<section>
+					<h3>In Most Cases A Company's Data is Just That, Their Data</h3>
+					<img src="./img/zumper.png" style= "float:left; margin: 0px 20px 0px 0px;">
+					<br>
+					<p>This is not reflective of DC apartments, but rather DC apartments listed on Zumper. That can be a big difference.
+					<br><br><br>
+					Read More: <a href="http://www.datalensdc.com/rentReports.html" target="_blank">All Those Reports About DC Rents? Best to Take Them With a Grain of Salt</a></p>
+					</section>
+
+					<section>
+					<h3>To truly love data, you must know it's flaws and help it be it's best self</h3>
+					<br><br>
+					<p>And that's why you should read and bookmark <a href="https://github.com/Quartz/bad-data-guide" target="_blank">Quartz's Bad Data Guide</a></p>
+					<br><br>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h1>Let's Data "Science"*</h1>
+					<br><br><br><br>
+					<p>*Which is to say let's take some imperfect data and make some imperfect decisions</p>
+					</section>
+
+					<section>
+					<h3>Data science is full of judgment calls from data cleaning to modeling to visualization.</h3>
+					</section>
+
+					<section>
+					<h3>Data Selection isn't Always A Neutral Act</h3>
+					<img src="./img/relVal.png">
+					<img src="./img/rpi.png">
+					<p>Source: ME!, <a href="http://www.datalensdc.com/wageRelative.html" target="_blank">DC's Expensive, but that's not the Whole Story</a>
+					</section>
+
+					<section>
+					<h3>How You Choose to Summarize Data Impacts Your Viz, Your Models</h3>
+					<img src="./img/bin.png">
+					<p>Source: Lisa Charlotte Rost, <a href="https://lisacharlotterost.github.io/2014/12/14/Styling-Choropleth-Maps-2/" target="_blank">Styling Choropleth Maps</a></p>
+					</section>
+
+					<section>
+					<h3>Your Design Choices Can Drastically Alter the Story</h3>
+					<img src="./img/warviz.png">
+					<p>Source: Andy Cotgreave, <a href="http://gravyanecdote.com/uncategorized/should-you-trust-a-data-visualisation/" target="_blank">Iraq's Bloody Toll</a></p>
+					</section>
+
+					<section>
+					<h3>Data Decisions Can Have Far-reaching Impacts</h3>
+					<img src="./img/wmd.png">
+					</section>
+				</section>
+
+			<section>
+				<section>
+				<h3>Wow. That Got Dark.
+				<br>
+				But, hey, Data Science is Fun and Important!</h3>
+				<br><br>
+				<p>If nothing else please remember these three things:</p>
+				<ul style="list-style-type:none">
+				<li>Be an informed skeptic.</li>
+				<li>Data is created and manipulated by humans.</li>
+				<li>Open source all the things.</li>
+				</ul>
+				<br><br><br>
+				</section>
+
+				<section>
+				<h1>Thanks for having me!</h1>
+				<br><br><br>
+				<p>You can find me via 
+				<br>
+				Twitter: @datalensdc
+				<br>
+				Github: https://github.com/katerabinowitz
+				<br>
+				E-mail: datalensdc@gmail.com
+				</p>
+				</section>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+			});
+		</script>
+	</body>
+</html>
