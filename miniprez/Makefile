@@ -3,4 +3,4 @@ all:
 view:
 	xdg-open techWomenTalk.html
 watch:
-	python ~/git-repo/miniprez/miniprez/miniprez.py --watch techWomenTalk.md
+	python ~/git-repo/miniprez/miniprez/miniprez.py --watch 1 techWomenTalk.md

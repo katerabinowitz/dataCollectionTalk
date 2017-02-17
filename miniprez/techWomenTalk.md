@@ -1,8 +1,10 @@
-----
-# DC Data + Tech Women
-### their stage absence and a path forward
-<br>
-#### Kate Rabinowitz <br> [@datalensdc](https://twitter.com/DataLensDC/)
+---- .bg-black
+@unsplash(src=SpVHcbuKi6E) .light
+.wrap
+ # DC Data + Tech Women
+ ### their stage absence and a path forward
+ <br>
+ #### Kate Rabinowitz <br> [@datalensdc](https://twitter.com/DataLensDC/)
    
 ---- .aligncenter
 # 2016: No Women Single-Speakers <br> at Major DC Tech Meetups
@@ -12,12 +14,13 @@
 # And Rarely at Major Multi-Speaker <br> DC Tech Meetups
 @p @figure(src="./img/DataVizDC/multi-speaker.png" width="80rem")
 
----- 
+---- .bg-black .slide-top
+@unsplash(src=pTosq4IO7Gk) .light
 # Hold on to your "Well, actually's"
 ### Let's debunk some myths
 @p Note: Names of individuals have been removed from the following tweets
 
----- 
+----
 # The goal is not separate but equal
 .grid
   | @figure(src="./img/DataVizDC/WDSDC.png" width="100%")
@@ -74,8 +77,11 @@
   Let organizers know you want more diverse speakers and spaces.
   _(especially you white men)_
 
----- .wrap
-# When the Burden of Diversity Advocacy Falls on Women and Minorities, as it So Often Does, this Sets Everybody Back
+---- .bg-white
+@unsplash(src=TRGNLA5lfyQ) .light
+.wrap # When the Burden of Diversity Advocacy Falls on Women and Minorities, as it So Often Does, this Sets Everybody Back
+
+
 ---- .wrap
 # Let's spend remaining time talking about some awesome dataviz work by DC Women
 @p ### (and let's note that this is an inconclusive list)
