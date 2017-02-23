@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+		p {
+			text-align:left;
+		}
+
+		li ul {
+			text-align:left;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<br><br>
+					<h1>Hey Code for DC!<br>Let's talk Open Data.</h1>
+					<br><br><br><br>
+				</section>
+
+				<section>
+					<h2>Brought to You by Open Data</h2>
+					<br>
+					<a href="https://www.nytimes.com/interactive/2017/02/23/us/americas-aging-dams-are-in-need-of-repair.html?_r=0" target="_blank"><img src="./img/codeforDC/dams.png"></a>
+					<a href="https://www.washingtonpost.com/graphics/national/visas-impact/" target="_blank"><img src="./img/codeforDC/visas.png"></a>
+					<a href="http://demographics.coopercenter.org/racial-dot-map/" target="_blank"><img src="./img/codeforDC/race.png"></a>
+					<br><br>
+					<p style="font-size:24px">(Plus so, so, so many business and policy decisions)</p>	
+				</section>
+
+
+				<section>
+					<section>
+					<img src="./img/codeforDC/giveMeOpenData.jpg">
+					</section>
+
+					<section>
+					<h3>Data.gov! Nearly Two! Hundred! Thousands! Datasets!</h3>
+					<img src="./img/JHU/datagov.png" alt="data.gov">
+					</section>
+
+					<section>
+					<h3>Well, actually...</h3>
+					<img src="./img/JHU/datagovstats.png" alt="electricGrid" style= "float:right; margin: 0px 0px 0px 20px;">
+					<p>Data.gov is valuable and great to peruse, but the number of datasets may make you more excited than you should be.
+					<br><br>More than half of the data is from two agencies (NOAA and Fish and Wildlife Services) and the majority is geospatial.
+					<br><br>Much of the data is not a format that cannot quickly be visualized.</p>
+					</section>
+
+					<section>
+					<h3>Federal Open Data Under Trump</h3>
+					<p>It's disappearing!
+					<img src="./img/codeforDC/whdata.png">
+					<br>...while, it's a <a href="http://www.sciencemag.org/news/2017/02/usda-scrubbing-animal-records-may-have-been-sparked-horse-lawsuit" target="_blank">little more</a> <a href="https://open.obamawhitehouse.archives.gov/" target="blank">complicated</a> <a href="https://sunlightfoundation.com/2017/02/17/online-search-for-obama-era-white-house-visitor-logs-goes-offline/" target="_blank">than that</a>.
+					<br>But the future collection, release, and quality of data is a big concern.
+					<br><br>You should be very concerned about <a href="http://www.snopes.com/trump-terror-watch-program/" target="_blank">changing</a> <a href="https://twitter.com/NickTimiraos/status/833377635556347904" target="_blank">methodology</a> that <a href="https://twitter.com/RVAwonk/status/834032121912098817" target="_blank">distorts</a> government data.
+					</p>
+					</section>
+
+					<section>
+					<h3>Going Local: DC's Data Portal</h3>
+					<img src="./img/codeforDC/opendatadc.png">
+					<br>
+					<p>Like data.gov, this is far from perfect. But we can make open data in DC better!</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+					<h2>Filling in the gaps of opendata.dc.gov</h2>
+					<img src="./img/codeforDC/datacodefordc.png">
+					</section>
+
+					<section>
+					<h3>DC has a lot of data in lots of different places. Let's build a single home!</h3>
+					<p>DC data lives in many different locations - maybe on the open data portal, (briefly) live on a Dropbox folder for a hackathon, tucked away on an agency website, or an individual's Github. 
+					<br><br>One time I tried documenting <a href="https://github.com/katerabinowitz/ManyHomesofDCData" target="_blank">all the places</a> to find local DC data.
+					<br><br>data.codefordc.org can be a more comprehensive home of DC data!</p>
+					</section>
+
+					<section>
+					<h3>The data can be in a terrible format: PDF!</h3>
+					<br><br>
+					<p>PDFs are ::the worst::
+					<br><br>
+					Tools like http://tabula.technology/ can free that data.
+					</p>
+					<br><br><br><br>
+					</section>
+
+					<section>
+					<h3>The data can be in a terrible format: Just on a Web Page!</h3>
+					<br><br>
+					<p>Sometimes a web page holds data that can only be viewed on that web page. Web scraping, put simply, lets you gather data from that web page.
+					<br><br>
+					To learn more I like this <a href="http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/" target="_blank">Greg Rada intro</a> and this <a href="http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html" target="_blank">walkthrough from Stanford's Text as Data course</a>.</p>
+					<br><br><br><br>
+					</section>
+
+					<section>
+					<h3>The data can be a little messy</h3>
+					<br><br>
+					<p>A lot of local data (taxi trips, permits, inspections, etc.) does not have a long history of being used for research and policy and lacks the infrastructure (or did so until very recently) for accurate, complete and clean open data reporting. 
+					<br><br>Documentation is often sparse.
+					</p> 
+					</section>
+
+					<section>
+					<h3>The data might not be open</h3>
+					<br><br>
+					<p>There is a good amount of government data made open. There is a lot of government data not that is open. There are many reasons for this. In many cases, you have the right to this data. You can FOIA for it.
+					<br><br>
+					Anyone can FOIA for data. Yes, you too!</p>
+					</section>
+
+					<section>
+					<h3>FOIA: A worthy challenge!</h3>
+					<p>You are freeing data into the world! What a joy!
+					<br><br>
+					Know that: your request should be as specific as possible because officals aren't always keen to fill in the blanks, delivery of data may be much longer than 15 days, you may have to pay, and the data will probably be in a terrible format.
+					<br><br>
+					You are freeing data into the world! What a joy!
+					</p>
+					</section>
+
+					<section>
+					<h3>How to FOIA</h3>
+					<p>Where you should FOIA: <a href="https://www.muckrock.com/" target="_blank">Muckrock</a>
+					<br><br>
+					Where to learn more on how FOIA works: <a href="https://www.rcfp.org/federal-open-government-guide/federal-freedom-information-act/how-foia-works" target="_blank">Reporters Committee for Freedom of the Press</a>
+					<br><br>
+					How to FOIA DC data: <a href="https://github.com/katerabinowitz/FOIA-Requests" target="_blank">Check out my guide</a> 
+					<br><br>
+					What you should FOIA: Everything. 
+					</p>
+					</section>	
+
+					<section>
+					<h3>DC's new Data Policy</h3>
+					<br><br>
+					<p>DC has a new data policy. You should <a href="https://drafts.dc.gov/docs/district-of-columbia-data-policy-draft" target="_blank">check it out.</a>
+					<br><br>
+					There's a lot in it! One the big pieces is a comprehensive list of DC government data (open and closed) in a year. That's a lot to FOIA!
+					<br><br>
+					Have opinions on data to prioritize being open? Stop by <a href="https://ogag.dc.gov/" target="_blank">Open Government Advisory Group</a> meeting. And help fill out data.codefordc.org!</p>
+					</section>			
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+			});
+		</script>
+	</body>
+</html>
